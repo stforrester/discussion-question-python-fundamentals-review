@@ -11,7 +11,7 @@ def greet(name):
 greet("Steven") #=> ?
 ```
 
-This returrns 
+This prints "Hello, Steven" and returns None.
 
 2 . What does this function return?
 
@@ -22,6 +22,7 @@ def love_this_veggie(vegetable):
   else:
     return "I love it!"
 ```
+This function returns "Nah, thanks" if invoked with the argument equal to "broccoli" and returns "I love it!" if invoked with an argument equal to anything else.
 
 3 . How would you produce a new list all of the words that start with the letter "a" from the below list?
 
@@ -32,7 +33,11 @@ Solution:
 ```python
 def get_letter_a(fruits):
   print([fruit for fruit in fruits if fruit[0] == "a"])
-
+```
+Or:
+```python
+def get_letter_a(fruits):
+  print([fruit for fruit in fruits if fruit.startswith("a")])
 ```
 
 4 . Write a function that takes in an argument of a sentence and returns the
@@ -66,7 +71,7 @@ favorite_animal = best_animal
 print(favorite_animal)
 # => ?
 ```
-Solution: "cat"
+This will print "cat".
 
 7 . What will the following `print`?
 
